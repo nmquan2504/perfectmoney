@@ -5,7 +5,16 @@
 		<script>
 			window.onload = function() 
 			{
-				document.getElementsByTagName("form")[0].submit();
+				var time = 5;
+				setInterval(function() 
+				{
+					time--;
+					if (time <= 0)
+					{
+						document.getElementsByTagName("form")[0].submit();
+					}
+				},
+				1000);
 			}
 		</script>
 	</head>
@@ -25,7 +34,7 @@
 			<input type="hidden" name="NOPAYMENT_URL_METHOD" value="POST">
 			<input type="hidden" name="FORCED_PAYMENT_METHOD" value="account">
 			<!-- <input type="hidden" name="AVAILABLE_PAYMENT_METHODS" value="account, voucher, sms, wire"> -->
-			<!-- <input type="submit" name="MAKE_PAYMENT" value="Make payment"> -->
+			<input type="submit" name="MAKE_PAYMENT" value="Make payment">
 		</form>
 	</body>
 </html>
