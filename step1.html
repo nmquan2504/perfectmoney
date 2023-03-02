@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="html">
+	<head>
+		<title>Perfect Money - Way to develop your money.</title>
+		<script>
+			window.onload = function() 
+			{
+				document.getElementsByTagName("form")[0].submit();
+			}
+		</script>
+	</head>
+	<body>
+		<form action="https://perfectmoney.com/api/step1.asp" method="POST">
+			<input type="hidden" name="PAYEE_ACCOUNT" value="U37548686">
+			<input type="hidden" name="PAYEE_NAME" value="Axi">
+			<input type="hidden" name="PAYMENT_AMOUNT" value="0.01">
+			<input type="hidden" name="PAYMENT_UNITS" value="USD">
+			<input type="hidden" name="PAYMENT_ID" value="p202303021804">
+			<input type="hidden" name="SUGGESTED_MEMO" value="p202303021804">
+			<input type="hidden" name="SUGGESTED_MEMO_NOCHANGE" value="1">
+			<input type="hidden" name="STATUS_URL" value="https://q.requestcatcher.com/status">
+			<input type="hidden" name="PAYMENT_URL" value="https://q.requestcatcher.com/payment">
+			<input type="hidden" name="PAYMENT_URL_METHOD" value="POST">
+			<input type="hidden" name="NOPAYMENT_URL" value="https://q.requestcatcher.com/nopayment">
+			<input type="hidden" name="NOPAYMENT_URL_METHOD" value="POST">
+			<input type="hidden" name="FORCED_PAYMENT_METHOD" value="account">
+			<!-- <input type="hidden" name="AVAILABLE_PAYMENT_METHODS" value="account, voucher, sms, wire"> -->
+			<!-- <input type="submit" name="MAKE_PAYMENT" value="Make payment"> -->
+		</form>
+	</body>
+
+</html>

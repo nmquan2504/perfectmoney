@@ -1,0 +1,475 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+	<title>Perfect Money - Way to develop your money.</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="cache-control" content="no-cache">
+	<META HTTP-EQUIV="Expires" CONTENT="Thu, 01 Dec 1994 16:00:00 GMT">
+	<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+	<META HTTP-EQUIV="Last-Modified" CONTENT="">
+	<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+	<link rel="stylesheet" type="text/css" href="/css/keyboard.css">
+	<style type="text/css">
+		<!--
+		.top {
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			font-size: 8pt
+		}
+
+		.req {
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			font-size: 9pt;
+			color: #FF0000
+		}
+
+		td {
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			font-size: 13px;
+			color: #333333
+		}
+
+		.ag {
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			font-size: 11px;
+			color: #333333
+		}
+
+		h2 {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 15pt;
+			color: #333333
+		}
+
+		#TJK_ToggleON,
+		#TJK_ToggleOFF {
+			display: none
+		}
+
+		.menu {
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			font-size: 10pt
+		}
+
+		.txt {
+			text-align: justify
+		}
+
+		a {
+			color: #990000
+		}
+		-->
+	</style>
+	<link rel="stylesheet" href="/style.css">
+	<link rel="StyleSheet" href="/css/style.css" type="text/css">
+
+	<script type="text/javascript" src="/js/toggle/toggle.js"></script>
+	<script type="text/javascript" src="/js/keyboard.js" charset="UTF-8"></script>
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" id="auth">
+
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+		<tr>
+			<td height="43"><img src="/img/blank.gif" width="900" height="15"><br>
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td colspan="2">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td width="10%" nowrap><img src="/img/blank.gif" width="14" height="26"><a
+											href="https://perfectmoney.com"
+											target="_blank"><img border=0 src="/img/logo3.png" width="306" height="63"></a>
+									</td>
+									<td align="right" valign="bottom">
+									</td>
+									<td align="right" valign="top" width="3%">&nbsp;</td>
+								</tr>
+							</table>
+							<font face="Verdana, Arial, Helvetica, sans-serif" size="2"><br>
+            </font>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+
+			<td width="38"><img src="/img/blank.gif" width="38" height="26"></td>
+			<td width="94%">
+
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr background="/img/bgg.gif">
+						<td colspan="2" valign="top" background="/img/bgg.gif">
+
+
+							<table border="0" width="100%" cellspacing="0" cellpadding="0">
+								<tr bgcolor=#FFFFFF>
+									<td height="13" valign="middle" nowrap width="99%"> <span id="actions"></span>
+										<img src="/img/red.gif" width="100%" height="1"><noscript> </noscript>
+									</td>
+								</tr>
+							</table>
+
+							<BR><BR>
+
+							<table width=550 border="0" cellspacing="0" cellpadding="1" align="center" bgcolor=#1C52AF>
+								<tr>
+									<td>
+										<table width=100% border="0" cellspacing="0" cellpadding="5" align="center"
+											bgcolor=#FFFFFF>
+											<tr>
+												<td>
+
+													<div style="padding: 15px 15px 15px 15px;">
+														<script language="JavaScript">
+															function changeForm(){
+
+	var al, ar, dl, dr, fo;
+
+	al=document.getElementById('al');
+	ar=document.getElementById('ar');
+	dl=document.getElementById('d_login');
+	dr=document.getElementById('d_register');
+
+	if(al.checked){
+		dl.className='d_vis';
+		dr.className='d_invis';
+	}else if(ar.checked){
+		dl.className='d_invis';
+		dr.className='d_vis';
+	}
+
+}
+
+function doSubm(tp){
+
+	var al, ar, memo, coupon, memo_h, coupon_h;
+
+	al=document.getElementById('al');
+	ar=document.getElementById('ar');
+
+	memo=document.getElementById('memo');
+	coupon=document.getElementById('coupon');
+
+	if(al.checked){
+		memo_h=document.getElementById('memo_hl');
+		coupon_h=document.getElementById('coupon_hl');
+	}else if(ar.checked){
+		memo_h=document.getElementById('memo_hr');
+		coupon_h=document.getElementById('coupon_hr');
+	}
+
+	memo_h.value=memo.value;
+	coupon_h.value=coupon.value;
+
+}
+														</script>
+														<style>
+															.d_vis {
+																display: all;
+															}
+
+															.d_invis {
+																display: none;
+															}
+														</style>
+
+														<h1>&nbsp;&nbsp;<font color="#F01010">Perfect Money&reg;</font>
+															payment order</h1>
+
+														<TABLE>
+															<TR>
+																<TD>
+																	<TABLE cellpadding=5>
+																		<TR>
+																			<TD nowrap>Payment to:</TD>
+																			<TD><B>U40220778 (Axi)</B></TD>
+																		</TR>
+																		<TR>
+																			<TD>Amount:</TD>
+																			<TD><b>0.01 USD</b></TD>
+																		</TR>
+																		<TR>
+																			<TD nowrap>Account type:</TD>
+																			<TD>
+																				<font color="#CC3300">Not verified
+																				</font>, 2.1 Trust Score point(s) <a
+																					href="/trustcore.html"
+																					target="_blank"><img src="/img/tr.gif" border="0"></a>
+																			</TD>
+																		</TR>
+																		<TR>
+																			<TD nowrap>Credit rating:</TD>
+																			<TD>Normal, no overdue loans.</TD>
+																		</TR>
+
+																		<TR>
+																			<TD>Memo:</TD>
+																			<TD nowrap>
+																				<input type="text" value="" size="50" maxlength="100" name="Memo" id="memo">
+            ref. # p202303011804
+																				<div class="error"></div>
+																			</TD>
+																		</TR>
+																	</TABLE>
+																</TD>
+															</TR>
+															<TR>
+																<TD><BR>
+																	<table border="0" cellspacing="0" cellpadding="0">
+																		<tr>
+																			<td nowrap colspan="2">
+																				<i><font face="Arial, Helvetica, sans-serif" size="2" color="#666666">&nbsp;<font color="#000000"><b>Do you have Perfect Money account?</b></font>&nbsp;</font></i>
+																			</td>
+																			<td nowrap>
+																				<hr size="2" width="150" noshade
+																					color="#666666">
+																			</td>
+																		</tr>
+																	</table>
+																	<img src="/img/blank.gif" width="38" height="8">
+																	<TABLE width="100%">
+																		<TR>
+																			<TD nowrap>
+																				<INPUT TYPE="radio" NAME="a_action" id="al" value="login" onClick="changeForm()" checked>
+																				<label for="al">Have account</label>
+																			</TD>
+																			<TD>
+																				<INPUT TYPE="radio" NAME="a_action" id="ar" value="register" onClick="changeForm()">
+																				<label for="ar">Don't have account, I am new customer</label>
+																			</TD>
+																		</TR>
+																		<TR>
+																			<TD>&nbsp;</TD>
+																			<TD>&nbsp;</TD>
+																		</TR>
+																	</table>
+
+																</TD>
+															</TR>
+															<TR>
+																<TD>
+
+																	<div id="d_login" class="d_vis">
+																		<form action="login.asp" method="POST"
+																			onSubmit="doSubm('f_log')" id="f_log">
+																			<INPUT TYPE="hidden" NAME="Memo" id="memo_hl">
+																			<INPUT TYPE="hidden" NAME="coupon" id="coupon_hl">
+																			<TABLE cellspacing=0>
+																				<TR valign=top>
+																					<TD>
+																						<TABLE cellpadding=5>
+																							<TR>
+																								<TD>Member ID:</TD>
+																								<TD><input type="text" size="20" maxlength="15" name="Login" value="10954163" disabled>
+																									<input type="hidden" name="Login" value="10954163">
+																									<div class="error">
+																									</div>
+																								</TD>
+																							</TR>
+																							<TR>
+																								<TD>Password:</TD>
+																								<TD><input type="password" size="32" maxlength="64" name="Password" autocomplete="off" class="keyboardInput"></TD>
+																							</TR>
+																							<TR>
+																								<TD>Turing number:<BR><a
+																										style="text-decoration:none;cursor:pointer;"
+																										href="javascript:void(0);"
+																										onclick="document.images['cpt_img'].src='/user/turing/image.asp?'+(new Date()).getTime();return false;"><img id="cpt_img" src="/user/turing/image.asp?1677672875"></a><br></TD>
+																								<TD valign=top nowrap>
+																									<input type="text" name="Turing" maxlength="10" size="7" autocomplete="off">
+																									<div class="error">
+																									</div>
+																								</TD>
+																							</TR>
+																						</TABLE>
+																					</TD>
+																				</TR>
+																			</TABLE>
+																			<TABLE cellpadding=5>
+																				<tr height=5>
+																					<td colspan=3></td>
+																				</tr>
+																				<TR>
+																					<TD valign=top>
+																						<input type="submit" name="action" class="button" value="Make payment"></TD>
+																					<TD valign=top>
+																						<input type="button" class="button" value="Back to payment methods" style="border-color:#EAEAEA;background:#F8F8F8;" onClick="document.location.href='step1.asp'"></TD>
+																					<TD valign=top>
+																		</form>
+																		<FORM
+																			ACTION="https://q.requestcatcher.com/nopayment"
+																			METHOD="POST">
+																			<input type="hidden" name="PAYEE_ACCOUNT" value="U40220778">
+																			<input type="hidden" name="PAYMENT_AMOUNT" value="0.01">
+																			<input type="hidden" name="PAYMENT_UNITS" value="USD">
+																			<input type="hidden" name="PAYMENT_ID" value="p202303011804">
+																			<input type="hidden" name="SUGGESTED_MEMO" value="">
+																			<input type="hidden" name="PAYMENT_BATCH_NUM" value="0"><input type="submit" class="button" value="Cancel payment" style="border-color:#EAEAEA;background:#F8F8F8;"></FORM>
+																</TD>
+															</TR>
+														</TABLE>
+													</div>
+
+													<div id="d_register" class="d_invis">
+														<form action="register.asp" method="POST"
+															onSubmit="doSubm('f_reg')" id="f_reg">
+															<INPUT TYPE="hidden" NAME="Memo" id="memo_hr">
+															<INPUT TYPE="hidden" NAME="coupon" id="coupon_hr">
+															<TABLE cellspacing=0>
+																<TR valign=top>
+																	<TD>
+																		<TABLE cellpadding=5>
+																			<TR valign=top>
+																				<TD>Name:</TD>
+																				<TD><input type="text" size="20" maxlength="15" name="name" value="">
+																					<div class="error"></div>
+																				</TD>
+																			</TR>
+																			<TR valign=top>
+																				<TD>Country:</TD>
+																				<TD><select name="country"><option value="">Choose the country </option><option value="1">United States</option><option value="248">Afghanistan</option><option value="2">Aruba</option><option value="3">Albania</option><option value="4">Algeria</option><option value="5">American Samoa</option><option value="6">Andorra</option><option value="7">Angola</option><option value="8">Anguilla</option><option value="9">Antigua & Barbuda</option><option value="10">Argentina</option><option value="11">Armenia</option><option value="12">Australia</option><option value="13">Austria</option><option value="14">Azerbaijan</option><option value="15">Azores</option><option value="16">Bahamas</option><option value="17">Bahrain</option><option value="18">Bangladesh</option><option value="19">Barbados</option><option value="20">Belarus</option><option value="21">Belgium</option><option value="22">Belize</option><option value="23">Benin</option><option value="24">Bermuda</option><option value="25">Bhutan</option><option value="26">Bolivia</option><option value="27">Bonaire</option><option value="28">Bosnia & Herzegovina</option><option value="29">Botswana</option><option value="30">Brazil</option><option value="31">British Indian Ocean Ter</option><option value="32">Brunei</option><option value="33">Bulgaria</option><option value="34">Burkina Faso</option><option value="35">Burundi</option><option value="36">Cambodia</option><option value="37">Cameroon</option><option value="38">Canada</option><option value="39">Canary Islands</option><option value="40">Cape Verde</option><option value="41">Cayman Islands</option><option value="42">Central African Republic</option><option value="43">Chad</option><option value="44">Channel Islands</option><option value="45">Chile</option><option value="46">China</option><option value="47">Christmas Island</option><option value="48">Cocos Island</option><option value="49">Colombia</option><option value="50">Comoros</option><option value="51">Congo</option><option value="52">Cook Islands</option><option value="53">Costa Rica</option><option value="54">Cote Divoire</option><option value="55">Croatia</option><option value="56">Cuba</option><option value="57">Curacao</option><option value="58">Cyprus</option><option value="59">Czech Republic</option><option value="60">Denmark</option><option value="61">Djibouti</option><option value="62">Dominica</option><option value="63">Dominican Republic</option><option value="64">East Timor</option><option value="65">Ecuador</option><option value="66">Egypt</option><option value="67">El Salvador</option><option value="68">Equatorial Guinea</option><option value="69">Eritrea</option><option value="70">Estonia</option><option value="71">Ethiopia</option><option value="72">Falkland Islands</option><option value="73">Faroe Islands</option><option value="74">Fiji</option><option value="75">Finland</option><option value="76">France</option><option value="77">French Guiana</option><option value="78">French Polynesia</option><option value="79">French Southern Ter</option><option value="80">Gabon</option><option value="81">Gambia</option><option value="82">Georgia</option><option value="83">Germany</option><option value="84">Ghana</option><option value="85">Gibraltar</option><option value="86">Great Britain</option><option value="87">Greece</option><option value="88">Greenland</option><option value="89">Grenada</option><option value="90">Guadeloupe</option><option value="91">Guam</option><option value="92">Guatemala</option><option value="93">Guinea</option><option value="94">Guyana</option><option value="95">Haiti</option><option value="96">Hawaii</option><option value="97">Honduras</option><option value="98">Hong Kong</option><option value="99">Hungary</option><option value="100">Iceland</option><option value="101">India</option><option value="102">Indonesia</option><option value="103">Iran</option><option value="104">Iraq</option><option value="105">Ireland</option><option value="106">Isle of Man</option><option value="107">Israel</option><option value="108">Italy</option><option value="109">Jamaica</option><option value="110">Japan</option><option value="111">Jordan</option><option value="112">Kazakhstan</option><option value="113">Kenya</option><option value="114">Kiribati</option><option value="115">Korea North</option><option value="116">Korea South</option><option value="247">Kosovo</option><option value="117">Kuwait</option><option value="118">Kyrgyzstan</option><option value="119">Laos</option><option value="120">Latvia</option><option value="121">Lebanon</option><option value="122">Lesotho</option><option value="123">Liberia</option><option value="124">Libya</option><option value="125">Liechtenstein</option><option value="126">Lithuania</option><option value="127">Luxembourg</option><option value="128">Macau</option><option value="129">Macedonia</option><option value="130">Madagascar</option><option value="131">Malaysia</option><option value="132">Malawi</option><option value="133">Maldives</option><option value="134">Mali</option><option value="135">Malta</option><option value="136">Marshall Islands</option><option value="137">Martinique</option><option value="138">Mauritania</option><option value="139">Mauritius</option><option value="140">Mayotte</option><option value="141">Mexico</option><option value="142">Midway Islands</option><option value="143">Moldova</option><option value="144">Monaco</option><option value="145">Mongolia</option><option value="246">Montenegro</option><option value="146">Montserrat</option><option value="147">Morocco</option><option value="148">Mozambique</option><option value="149">Myanmar</option><option value="150">Namibia</option><option value="151">Nauru</option><option value="152">Nepal</option><option value="153">Netherland Antilles</option><option value="154">Netherlands</option><option value="155">Nevis</option><option value="156">New Caledonia</option><option value="157">New Zealand</option><option value="158">Nicaragua</option><option value="159">Niger</option><option value="160">Nigeria</option><option value="161">Niue</option><option value="162">Norfolk Island</option><option value="163">Norway</option><option value="164">Oman</option><option value="165">Pakistan</option><option value="166">Palau Island</option><option value="167">Palestine</option><option value="168">Panama</option><option value="169">Papua New Guinea</option><option value="170">Paraguay</option><option value="171">Peru</option><option value="172">Philippines</option><option value="173">Pitcairn Island</option><option value="174">Poland</option><option value="175">Portugal</option><option value="176">Puerto Rico</option><option value="177">Qatar</option><option value="178">Reunion</option><option value="179">Romania</option><option value="180">Russian Federation</option><option value="181">Rwanda</option><option value="182">St Barthelemy</option><option value="183">St Eustatius</option><option value="184">St Helena</option><option value="185">St Kitts-Nevis</option><option value="186">St Lucia</option><option value="187">St Maarten</option><option value="188">St Pierre & Miquelon</option><option value="189">St Vincent & Grenadines</option><option value="190">Saipan</option><option value="191">Samoa</option><option value="192">Samoa American</option><option value="193">San Marino</option><option value="194">Sao Tome & Principe</option><option value="195">Saudi Arabia</option><option value="196">Senegal</option><option value="197">Seychelles</option><option value="198">Serbia</option><option value="199">Sierra Leone</option><option value="200">Singapore</option><option value="201">Slovakia</option><option value="202">Slovenia</option><option value="203">Solomon Islands</option><option value="204">Somalia</option><option value="205">South Africa</option><option value="206">Spain</option><option value="207">Sri Lanka</option><option value="208">Sudan</option><option value="209">Suriname</option><option value="210">Swaziland</option><option value="211">Sweden</option><option value="212">Switzerland</option><option value="213">Syria</option><option value="214">Tahiti</option><option value="215">Taiwan</option><option value="216">Tajikistan</option><option value="217">Tanzania</option><option value="218">Thailand</option><option value="219">Togo</option><option value="220">Tokelau</option><option value="221">Tonga</option><option value="222">Trinidad & Tobago</option><option value="223">Tunisia</option><option value="224">Turkey</option><option value="225">Turkmenistan</option><option value="226">Turks & Caicos Is</option><option value="227">Tuvalu</option><option value="228">Uganda</option><option value="229">Ukraine</option><option value="230">United Arab Emirates</option><option value="231">United Kingdom</option><option value="232">Uruguay</option><option value="233">Uzbekistan</option><option value="234">Vanuatu</option><option value="235">Vatican City State</option><option value="236">Venezuela</option><option value="237">Vietnam</option><option value="238">Virgin Islands (Brit)</option><option value="240">Wake Island</option><option value="241">Wallis & Futana Is</option><option value="242">Yemen</option><option value="243">Democratic Republic of Congo</option><option value="244">Zambia</option><option value="245">Zimbabwe</option></select>
+																					<div class="error"></div>
+																				</TD>
+																			</TR>
+																			<TR valign=top>
+																				<TD>Email:</TD>
+																				<TD><input type="text" size="20" maxlength="100" name="email" value="">
+																					<div class="error"></div>
+																				</TD>
+																			</TR>
+																			<TR valign=top>
+																				<TD>Turing number:<BR><a
+																						style="text-decoration:none;cursor:pointer;"
+																						href="javascript:void(0);"
+																						onclick="document.images['cpt_img'].src='/user/turing/image.asp?'+(new Date()).getTime();return false;"><img id="cpt_img" src="/user/turing/image.asp?1677672875"></a><br></TD>
+																				<TD valign=top nowrap><input type="text" name="Turing" maxlength="10" size="10" autocomplete="off">
+																					<div class="error"></div>
+																				</TD>
+																			</TR>
+																		</TABLE>
+																	</TD>
+																</TR>
+															</TABLE>
+															<TABLE cellpadding=5>
+																<tr height=5>
+																	<td colspan=3></td>
+																</tr>
+																<TR>
+																	<TD valign=top>
+																		<input type="submit" name="action" class="button" value="Make payment"></TD>
+																	<TD valign=top>
+																		<input type="button" class="button" value="Back to payment methods" onClick="document.location.href='step1.asp'" style="border-color:#EAEAEA;background:#F8F8F8;"></TD>
+																	<TD valign=top>
+														</form>
+														<FORM ACTION="https://q.requestcatcher.com/nopayment"
+															METHOD="POST">
+															<input type="hidden" name="PAYEE_ACCOUNT" value="U40220778">
+															<input type="hidden" name="PAYMENT_AMOUNT" value="0.01">
+															<input type="hidden" name="PAYMENT_UNITS" value="USD">
+															<input type="hidden" name="PAYMENT_ID" value="p202303011804">
+															<input type="hidden" name="SUGGESTED_MEMO" value="">
+															<input type="hidden" name="PAYMENT_BATCH_NUM" value="0"><input type="submit" class="button" value="Cancel payment" style="border-color:#EAEAEA;background:#F8F8F8;"></FORM>
+												</TD>
+											</TR>
+										</TABLE>
+										</div>
+
+									</TD>
+									<td>
+										<div class="error"></div>
+									</td>
+								</TR>
+							</TABLE>
+							</div>
+
+						</td>
+					</tr>
+
+				</table>
+
+			</td>
+		</tr>
+
+	</table>
+
+	<br><Br>
+
+
+</td>
+	</tr>
+
+	<tr valign=middle>
+		<td bgcolor=#FFFFFF valign="middle" height=12><img src="/img/red.gif" width="100%" height="1"></td>
+	</tr>
+
+
+	</table>
+	</td>
+	<td width="3%" valign="middle"><img src="/img/blank.gif" width="24" height="26"></td>
+		</tr>
+		</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+			<tr>
+				<td height="2">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td width="1%"><img src="/img/bl.gif" width="19" height="6"></td>
+							<td width="98%" bgcolor="1C52AF"><img src="/img/blank.gif" width="1" height="1"></td>
+							<td width="1%" valign="middle"><img src="/img/br.gif" width="19" height="6"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+			<tr>
+				<td bgcolor="#ffffff" valign="top" height="56">
+					<div align="left">
+						<table width="100%" border="0" cellspacing="5" cellpadding="5">
+							<tr>
+								<td>
+									<div align="left">
+										<small><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>
+Are you a webmaster?</b> <br>
+                Please <a href="https://perfectmoney.com" target="_blank">click here</a> to accept payments on your website in such an easy way. Instant approval.</font></small>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td bgcolor="#ffffff" valign="top" height="56">
+					<table width="500" border="0" cellspacing="5" cellpadding="5" align="right">
+						<tr>
+							<td>
+								<div align="right"><small><font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+              &copy; 2023 SR & I. All rights reserved.&nbsp;
+              <br>
+              <a href="/legal.html"><font color="#b50b0b">Legal notice</font></a>
+              | <a href="/privacy.html"><font color="#b50b0b">Privacy policy</font></a><small><font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+              | <a href="/tos.html"><font color="#b50b0b">Terms of Use</font></a></font></small>
+									&nbsp;</font></small> </div>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+
+
+</body>
+
+</html>
